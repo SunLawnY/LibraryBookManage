@@ -1,4 +1,7 @@
 package org.OOPTask.Exception;
 
-public class BookNotFoundException {
+public class BookNotFoundException extends Exception{
+    public BookNotFoundException(){
+        super("Book not found");
+    }
 }

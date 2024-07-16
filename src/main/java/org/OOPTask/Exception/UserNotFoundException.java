@@ -1,4 +1,7 @@
 package org.OOPTask.Exception;
 
-public class UserNotFound extends Exception{
+public class UserNotFoundException extends Exception{
+    public UserNotFoundException(){
+        super("User not found");
+    }
 }

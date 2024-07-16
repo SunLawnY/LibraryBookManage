@@ -5,19 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b595f501-73ba-4895-b3ff-967970a30eba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/DuplicateUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/BookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/BookNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/OOPTask/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OOPTask/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SunLawnY"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SunLawnY/LibraryBookManage.git",
+    "accountId": "5817bb88-391a-4683-a65c-e9ddbf2ffdca"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jFtJBwX4wzjkTQvB9IO80XtjUm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,11 +55,122 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.LibraryTest.addNewBook.executor": "Run",
+    "JUnit.LibraryTest.addNewUser.executor": "Run",
+    "JUnit.LibraryTest.bookBorrowedByUser.executor": "Run",
+    "JUnit.LibraryTest.removeBook.executor": "Run",
+    "JUnit.LibraryTest.removeUser.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.OOPTask" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LibraryTest.bookReturnedByUser">
+    <configuration name="LibraryTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookManageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OOPTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OOPTask" />
+      <option name="MAIN_CLASS_NAME" value="org.OOPTask.LibraryTest" />
+      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.bookBorrowedByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookManageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OOPTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OOPTask" />
+      <option name="MAIN_CLASS_NAME" value="org.OOPTask.LibraryTest" />
+      <option name="METHOD_NAME" value="bookBorrowedByUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.bookReturnedByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookManageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OOPTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OOPTask" />
+      <option name="MAIN_CLASS_NAME" value="org.OOPTask.LibraryTest" />
+      <option name="METHOD_NAME" value="bookReturnedByUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.removeBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookManageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OOPTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OOPTask" />
+      <option name="MAIN_CLASS_NAME" value="org.OOPTask.LibraryTest" />
+      <option name="METHOD_NAME" value="removeBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.removeUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookManageSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OOPTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OOPTask" />
+      <option name="MAIN_CLASS_NAME" value="org.OOPTask.LibraryTest" />
+      <option name="METHOD_NAME" value="removeUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LibraryTest.bookReturnedByUser" />
+        <item itemvalue="JUnit.LibraryTest.bookBorrowedByUser" />
+        <item itemvalue="JUnit.LibraryTest.removeUser" />
+        <item itemvalue="JUnit.LibraryTest.addNewUser" />
+        <item itemvalue="JUnit.LibraryTest.removeBook" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
