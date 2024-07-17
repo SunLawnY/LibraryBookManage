@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b595f501-73ba-4895-b3ff-967970a30eba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/DuplicateUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/BorrowRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/BookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/BookNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/DuplicateUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/DuplicateUserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Exception/UserNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/OOPTask/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/OOPTask/Main.java" afterDir="false" />
@@ -32,18 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SunLawnY"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SunLawnY&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SunLawnY/LibraryBookManage.git",
-    "accountId": "5817bb88-391a-4683-a65c-e9ddbf2ffdca"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SunLawnY/LibraryBookManage.git&quot;,
+    &quot;accountId&quot;: &quot;5817bb88-391a-4683-a65c-e9ddbf2ffdca&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,25 +52,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.LibraryTest.addNewBook.executor": "Run",
-    "JUnit.LibraryTest.addNewUser.executor": "Run",
-    "JUnit.LibraryTest.bookBorrowedByUser.executor": "Run",
-    "JUnit.LibraryTest.removeBook.executor": "Run",
-    "JUnit.LibraryTest.removeUser.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.addNewBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.addNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.bookBorrowedByUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.bookReturnedByUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.removeBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.removeUser.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -80,7 +80,7 @@
       <recent name="org.OOPTask" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.bookReturnedByUser">
+  <component name="RunManager">
     <configuration name="LibraryTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookManageSystem" />
       <extension name="coverage">

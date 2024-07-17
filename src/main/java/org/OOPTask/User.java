@@ -7,11 +7,13 @@ public class User {
     private int id;
     private String userName;
     private List<Book> borrowedBook;
+    private List<BorrowRecord> borrowRecords;
 
     public User(int id, String username) {
         this.id = id;
         this.userName = username;
         this.borrowedBook = new ArrayList<>();
+        this.borrowRecords = new ArrayList<>();
     }
 
     public int getId() {
@@ -40,6 +42,19 @@ public class User {
 
     public void returnBook(Book book){
         borrowedBook.remove(book);
+    }
+
+    public void addBorrowedRecord(BorrowRecord record){
+        borrowRecords.add(record);
+    }
+
+    public void returnBorrowRecord(BorrowRecord record){
+        for(BorrowRecord borrowRecord : borrowRecords){
+            if(borrowRecord.getBook().equals(record.getBook()) && borrowRecord.getReturnDate() == null){
+                borrowRecord.setReturnDate(record.getReturnDate());
+                break;
+            }
+        }
     }
 
     @Override

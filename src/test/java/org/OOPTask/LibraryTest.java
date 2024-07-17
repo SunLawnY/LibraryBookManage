@@ -39,18 +39,18 @@ class LibraryTest {
         User test2 = new User(2, "test2");
         testLibrary.addNewUser(test1);
         testLibrary.addNewUser(test2);
-        assertEquals(testLibrary.getAllUserInLibrary().size(), 2);
+        assertEquals(testLibrary.getAllUsersInLibrary().size(), 2);
     }
 
     @Test
-    void removeUser() throws DuplicateUserException {
+    void removeUser() throws DuplicateUserException, UserNotFoundException {
         User test1 = new User(1, "test1");
         User test2 = new User(2, "test2");
         testLibrary.addNewUser(test1);
         testLibrary.addNewUser(test2);
-        assertEquals(testLibrary.getAllUserInLibrary().size(), 2);
+        assertEquals(testLibrary.getAllUsersInLibrary().size(), 2);
         testLibrary.removeUser(test2);
-        assertEquals(testLibrary.getAllUserInLibrary().size(), 1);
+        assertEquals(testLibrary.getAllUsersInLibrary().size(), 1);
     }
 
     @Test
@@ -75,19 +75,23 @@ class LibraryTest {
         Book testBook1 = new Book(12345, "TestBook", "TestAuthor");
         Book testBook2 = new Book(22345, "TestBook2", "TestAuthor2");
         testLibrary.addNewBook(testBook1);
+        testLibrary.addNewBook(testBook2);
         User testUser1 = new User(1, "test1");
         User testUser2 = new User(2, "test2");
         testLibrary.addNewUser(testUser1);
         testLibrary.addNewUser(testUser2);
-        testUser2.addBorrowedBook(testBook2);
+        testLibrary.bookBorrowedByUser(testUser2, testBook2);
 
-        assertEquals(testLibrary.getAllBooksInLibrary().size(), 1);
+        assertFalse(testBook2.isAvailable());
+        assertEquals(testLibrary.getAllBooksInLibrary().size(), 2);
+        assertEquals(testUser2.getBorrowedBook().size(), 1);
         assertEquals(testUser2.getBorrowedBook().getFirst(), testBook2);
         assertEquals(testLibrary.getAllBooksInLibrary().getFirst(), testBook1);
 
         testLibrary.bookReturnedByUser(testUser2, testBook2);
 
         assertEquals(testLibrary.getAllBooksInLibrary().size(), 2);
+        assertTrue(testBook2.isAvailable());
         assertEquals(testUser2.getBorrowedBook().size(), 0);
     }
 }

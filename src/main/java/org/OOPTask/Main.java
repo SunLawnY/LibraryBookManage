@@ -1,25 +1,44 @@
 package org.OOPTask;
 
+import org.OOPTask.Exception.BookNotFoundException;
 import org.OOPTask.Exception.DuplicateUserException;
+import org.OOPTask.Exception.UserNotFoundException;
 
 public class Main {
-    public static void main(String[] args) throws DuplicateUserException {
-        Book book1 = new Book(123456789, "The Great Gatsby", "F. Scott Fitzgerald");
-        Book book2 = new Book(987654321, "1984", "George Orwell");
-        Book book3 = new Book(112233445, "To Kill a Mockingbird", "Harper Lee");
-
+    public static void main(String[] args) {
         Library library = new Library();
+
+        Book book1 = new Book(1, "Book One", "Author One");
+        Book book2 = new Book(2, "Book Two", "Author Two");
+
         library.addNewBook(book1);
         library.addNewBook(book2);
-        library.addNewBook(book3);
-        User user1 = new User(1, "Alice");
-        User user2 = new User(2, "Bob");
-        User user3 = new User(3, "Charlie");
-        library.addNewUser(user1);
-        library.addNewUser(user2);
-        library.addNewUser(user3);
 
-        System.out.println(library.getAllUserInLibrary());
+        User user1 = new User(1, "User One");
+        User user2 = new User(2, "User Two");
 
+        try {
+            library.addNewUser(user1);
+            library.addNewUser(user2);
+        } catch (DuplicateUserException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            library.bookBorrowedByUser(user1, book1);
+            library.bookBorrowedByUser(user2, book2);
+        } catch (BookNotFoundException | UserNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            library.bookReturnedByUser(user1, book1);
+        } catch (UserNotFoundException | BookNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Books in Library: " + library.getAllBooksInLibrary());
+        System.out.println("Users in Library: " + library.getAllUsersInLibrary());
+        System.out.println("Borrow Records: " + library.getAllBorrowRecords());
     }
 }
